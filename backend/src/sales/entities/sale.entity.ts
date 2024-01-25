@@ -4,14 +4,14 @@ import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 @Entity()
 export class Sale {
   @PrimaryGeneratedColumn()
-  id: number;
+  id!: number;
 
   @Column()
-  date: Date;
+  date!: Date;
 
   @Column()
-  product: string;
+  product!: string;
 
   @Column()
-  quantity: number;
+  quantity!: number;
 }
