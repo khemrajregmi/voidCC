@@ -2,8 +2,8 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Sale } from './entities/sale.entity';
-import { CreateSaleDto } from '../dto/create-sale.dto';
+import { Sale } from '../entities/sale.entity'; // Adjust the path based on your project structure
+import { CreateSaleDto } from '../dto/create-sale.dto'; // Assuming you have a DTO
 
 @Injectable()
 export class SalesService {
